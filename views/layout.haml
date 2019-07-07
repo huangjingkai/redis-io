@@ -27,21 +27,21 @@
       %section.menu-section
         %ul.menu-section-list
           %li
-            %a.home(href="/") Home
+            %a.home(href="/") 主页
           %li
-            %a(href="/commands") Commands
+            %a(href="/commands") 命令
           %li
-            %a(href="/clients") Clients
+            %a(href="/clients") 客户端
           %li
-            %a(href="/documentation") Documentation
+            %a(href="/documentation") 文档
           %li
-            %a(href="/community") Community
+            %a(href="/community") 社区
           %li
-            %a(href="/download") Download
+            %a(href="/download") 下载
           %li
-            %a(href="/modules") Modules
+            %a(href="/modules") 模块
           %li
-            %a(href="/support") Support
+            %a(href="/support") 支持
 
     .site-wrapper
 
@@ -57,13 +57,13 @@
           .desktop-header
             %a.home(href="/")
               %img(src="/images/redis-white.png" alt="Redis")
-            %a(href="/commands") Commands
-            %a(href="/clients") Clients
-            %a(href="/documentation") Documentation
-            %a(href="/community") Community
-            %a(href="/download") Download
-            %a(href="/modules") Modules
-            %a(href="/support") Support
+            %a(href="/commands") 命令
+            %a(href="/clients") 客户端
+            %a(href="/documentation") 文档
+            %a(href="/community") 社区
+            %a(href="/download") 下载
+            %a(href="/modules") 模块
+            %a(href="/support") 支持
 
       - if Date.today < Date.new(2019, 1, 31)
         %aside.wide-callout
@@ -75,14 +75,13 @@
       %footer.site-footer
         .container
           %p
-            This website is
-            <a href="https://github.com/antirez/redis-io">open source software</a>.
-            See all <a href="/topics/sponsors">credits</a>.
+            这个网站是
+            <a href="https://github.com/huangjingkai/redis-io">开源的</a>，感谢支持。
 
           .sponsor
-            Sponsored by
-            %a(href="https://redislabs.com/")
-              %img(src="/images/redislabs.png" alt="Redis Labs" title="Get a Managed Redis" width="128" height="25")
+            赞助商
+            %a(href="https://www.huaweicloud.com/product/dcs.html")
+              %img(src="/images/huaweiyun.png" alt="华为云Redis" title="免费获取一个Redis实例" )
 
-    %script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js")
+    %script(src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js")
     %script(src="/app.js?#{File.mtime("public/app.js").to_i}")
